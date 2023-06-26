@@ -1,14 +1,11 @@
 {
   "env": {
       "browser": true,
-      "es2020": true,
+      "es6": true,
       "jest": true
   },
   "extends": [
-    "plugin:react/recommended",
-    "airbnb", 
-   [ "airbnb", "plugin:prettier/recommended" ]
-
+     "airbnb", "plugin:prettier/recommended"
   ],
   "globals": {
       "Atomics": "readonly",
@@ -22,8 +19,7 @@
       "sourceType": "module"
   },
   "plugins": [
-      "react",
-      "prettier"
+      "react"
   ],
   "rules": {
     "no-underscore-dangle": [0],
