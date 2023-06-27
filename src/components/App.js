@@ -1,11 +1,12 @@
-import '../styles/app.css';
+import "../styles/app.css";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <h2> Surreal Estate </h2>
     </div>
   );
-}
+};
 
 export default App;

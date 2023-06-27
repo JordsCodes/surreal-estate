@@ -3,7 +3,8 @@ import App from '../components/App';
 
 test('renders heading', () => {
   render(<App />);
-  const heading = screen.getByText(/Surreal Estate/i);
-  
-  expect(heading).toBeInTheDocument();
+    const heading = screen.getByText(/Surreal Estate/i);
+   
+    expect(heading).toBeInTheDocument();
 });
+
