@@ -1,0 +1,23 @@
+.navbar {
+  height: 75px;
+  display:flex;
+  background-color: white;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.navbar-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar-title {
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.navbar-links-item {
+  display: inline-block;
+  padding-top: 35px;
+  padding-right: 10px;
+}
