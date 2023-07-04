@@ -1,0 +1,16 @@
+.alert-success {
+  background-color: #EFE;
+  border: 1px solid #DED;
+  color: #9A9;
+  padding: 5px;
+  text-align: center;
+}
+
+.alert-error {
+  background-color: #FEE;
+  border: 1px solid #EDD;
+  color: #A66;
+  padding: 5px;
+  height: 32px;
+  text-align: center;
+}

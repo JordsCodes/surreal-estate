@@ -1,0 +1,21 @@
+.add-property {
+  margin: 0px auto;
+  width: 256px;
+  padding: 20px;
+}
+
+.add-property-form {
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+select, input {
+  margin-top: 5px
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert displays error message 1`] = `
+<div
+  class="alert-error"
+>
+  Error!
+</div>
+`;
+
+exports[`Alert displays success message 1`] = `
+<div
+  class="alert-success"
+>
+  Success!!!
+</div>
+`;
+
+exports[`Alert doesn't render if message is null 1`] = `<DocumentFragment />`;
