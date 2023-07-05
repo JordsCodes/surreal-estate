@@ -1,0 +1,9 @@
+.property-card {
+  box-shadow: rgba(218, 194, 247, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+  padding-left: 5px;
+}
+
+.property-card_title {
+  font-style: italic;
+}
