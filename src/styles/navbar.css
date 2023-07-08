@@ -1,7 +1,10 @@
 .navbar {
   height: 75px;
+  width: 90%;
+  margin: 0px auto;
   display:flex;
   background-color: white;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 25px;
   justify-content: center;
 }
@@ -16,8 +19,23 @@
   padding-left: 10px;
 }
 
-.navbar-links-item {
-  display: inline-block;
-  padding-top: 35px;
-  padding-right: 10px;
+.navbar-links {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  column-gap: 10px;
+  margin: 0px 0px 10px 0px;
 }
+
+.navbar-links-item-text {
+  color: black;
+  text-decoration: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 25px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+

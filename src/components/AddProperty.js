@@ -26,19 +26,15 @@ const AddProperty = () => {
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     try {
-      const response = await axios.post(
-        "http://localhost:4000/api/v1/PropertyListing",
-        {
-          title: fields.title,
-          city: fields.city,
-          type: fields.type,
-          bedrooms: fields.bedrooms,
-          bathrooms: fields.bathrooms,
-          price: fields.price,
-          email: fields.email,
-        }
-      );
-      console.log(response.data);
+      await axios.post("http://localhost:4000/api/v1/PropertyListing", {
+        title: fields.title,
+        city: fields.city,
+        type: fields.type,
+        bedrooms: fields.bedrooms,
+        bathrooms: fields.bathrooms,
+        price: fields.price,
+        email: fields.email,
+      });
       setAlert({ message: "Property Added. :)", isSuccess: true });
     } catch (err) {
       setAlert({ message: "Server Error. Try again later!", isSuccess: false });
