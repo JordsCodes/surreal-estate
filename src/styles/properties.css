@@ -1,6 +1,7 @@
 .properties-page {
-  width: 80%;
+  width: 90%;
   margin: auto;
+  display: flex;
 }
 
 .property-cards {
