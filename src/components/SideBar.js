@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import qs from "qs";
 import "../styles/side-bar.css";
 
 const SideBar = () => {
-  const initialState = "";
-
-  const [query, setQuery] = useState(initialState);
+  const [query, setQuery] = useState("");
+  const { search } = useLocation();
+  const navigate = useNavigate();
 
   const handleQueryChange = (event) => {
     setQuery(event.target.value);
   };
 
   const buildQueryString = (operation, valueObj) => {
-    const { search } = useLocation();
     const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
     const newQueryParams = {
       ...currentQueryParams,
@@ -27,9 +26,8 @@ const SideBar = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    console.log('test');
     const queryString = buildQueryString("query", { title: { $regex: query } });
-    console.log(queryString);
+    navigate(queryString);
   };
 
   return (
@@ -83,7 +81,7 @@ const SideBar = () => {
       Sort by Price
       <Link
         className="sidebar-link"
-        to={buildQueryString("sort", { price: -1 })}
+        to={buildQueryString("sort", { price: 1 })}
       >
         Ascending
       </Link>

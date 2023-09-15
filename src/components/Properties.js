@@ -47,6 +47,7 @@ const Properties = () => {
             bathrooms={property.bathrooms}
             price={property.price}
             email={property.email}
+            key={properties.indexOf(property)}
           />
         ))}
       </div>
