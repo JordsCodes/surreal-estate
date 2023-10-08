@@ -49,19 +49,23 @@ const AddProperty = () => {
   return (
     <div className="add-property">
       <Alert message={alert.message} success={alert.isSuccess} />
-      Property Description
       <form className="add-property-form" onSubmit={handleAddProperty}>
-        <input
-          id="title"
-          name="title"
-          value={fields.title}
-          onChange={handleFieldChange}
-        />
+        <label className="input-field" htmlFor="description">
+          Property Description
+          <input
+            id="title"
+            name="title"
+            value={fields.title}
+            onChange={handleFieldChange}
+          />
+        </label>
+
         <label className="input-field" htmlFor="city">
           City
           <select
             id="city"
             name="city"
+            className="input-box"
             aria-label="city"
             value={fields.city}
             onChange={handleFieldChange}
@@ -77,6 +81,7 @@ const AddProperty = () => {
           <select
             id="type"
             name="type"
+            className="input-box"
             aria-label="type"
             value={fields.type}
             onChange={handleFieldChange}
@@ -95,6 +100,7 @@ const AddProperty = () => {
           <input
             id="bedrooms"
             name="bedrooms"
+            className="input-box"
             value={fields.bedrooms}
             onChange={handleFieldChange}
           />
@@ -104,6 +110,7 @@ const AddProperty = () => {
           <input
             id="bathrooms"
             name="bathrooms"
+            className="input-box"
             value={fields.bathrooms}
             onChange={handleFieldChange}
           />
@@ -113,6 +120,7 @@ const AddProperty = () => {
           <input
             id="price"
             name="price"
+            className="input-box"
             value={fields.price}
             onChange={handleFieldChange}
           />
@@ -122,11 +130,12 @@ const AddProperty = () => {
           <input
             id="email"
             name="email"
+            className="input-box"
             value={fields.email}
             onChange={handleFieldChange}
           />
         </label>
-        <button type="submit"> Add </button>
+        <button type="submit" className="submit-button"> Add Property</button>
       </form>
     </div>
   );

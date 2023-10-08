@@ -6,7 +6,7 @@ import Alert from "./Alert";
 import SideBar from "./SideBar";
 import "../styles/properties.css";
 
-const Properties = () => {
+const Properties = ({ userId }) => {
   const [properties, setProperties] = useState([]);
   const [alert, setAlert] = useState({
     message: "",
@@ -48,6 +48,7 @@ const Properties = () => {
             price={property.price}
             email={property.email}
             key={properties.indexOf(property)}
+            userId={userId}
           />
         ))}
       </div>

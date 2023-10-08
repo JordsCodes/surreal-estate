@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 import jwtDecode from "jwt-decode";
@@ -43,6 +43,15 @@ const NavBar = ({ user, setUser }) => {
             {" "}
             Add a Property
           </Link>
+        </li>
+        <li>
+          {" "}
+          {user && (
+            <Link className="navbar-links-item" to="saved-properties">
+              {" "}
+              Saved Properties
+            </Link>
+          )}
         </li>
         {user ? (
           <div className="sign-out">
