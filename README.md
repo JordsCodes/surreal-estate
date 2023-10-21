@@ -1,6 +1,6 @@
 # Surreal Estate
 
-This is a Property Management App designed to display user-created property cards. The property data is stored in a locally-hosted API, which can be cloned here:
+This is a Property Management App designed to display properties added by the user. The property data is stored in a locally-hosted API, which can be cloned here:
 
 https://github.com/JordsCodes/surreal-estate-api
 
@@ -32,7 +32,7 @@ The user can add properties via the "Add Property" tab in the NavBar. These prop
 
 Given the non-deployed nature of the app, the single-sign on service is currently restricted to test accounts (my own Google account). 
 
-The user is however free to re-configure the Google Sign-On technology to allow  for this functionality:
+The user is however free to change the clientID to connect to their own Google Identity Services console:
 
 https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
 
