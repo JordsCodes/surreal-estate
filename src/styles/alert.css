@@ -1,5 +1,9 @@
 .alert-success {
+  position: fixed;
+  left: 550px;
+  top: 120px;
   background-color: #EFE;
+  width: 200px;
   border: 1px solid #DED;
   color: #9A9;
   padding: 5px;
@@ -7,6 +11,10 @@
 }
 
 .alert-error {
+  position: fixed;
+  left: 550px;
+  top: 120px;
+  width: 200px;
   background-color: #FEE;
   border: 1px solid #EDD;
   color: #A66;

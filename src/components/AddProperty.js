@@ -74,6 +74,9 @@ const AddProperty = () => {
             <option value="Leeds">Leeds</option>
             <option value="Sheffield">Sheffield</option>
             <option value="Liverpool">Liverpool</option>
+            <option value="Newcastle">Newcastle</option>
+            <option value="York">York</option>
+
           </select>
         </label>
         <label className="input-field" htmlFor="type">

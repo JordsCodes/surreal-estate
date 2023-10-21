@@ -1,12 +1,12 @@
 .properties-page {
-  width: 90%;
+  width: 1050px;
   margin: 0px auto;
   display: flex;
 }
 
 .property-cards {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  margin-left: 50px;
 }

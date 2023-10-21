@@ -28,14 +28,14 @@ const SavedProperties = () => {
     }
   }, []);
 
-  console.log(properties);
-
   return (
     <div className="saved-properties">
-      <h1>Saved Properties</h1>
-      <div className="property-cards">
+      <h1 className="saved-properties-heading">Saved Properties</h1>
+      <div className="saved-properties-cards">
         {properties.map((property) => (
           <PropertyCard
+            properties={properties}
+            setProperties={setProperties}
             title={property.title}
             city={property.city}
             type={property.type}
@@ -44,6 +44,7 @@ const SavedProperties = () => {
             price={property.price}
             email={property.email}
             key={properties.indexOf(property)}
+            saved
           />
         ))}
       </div>

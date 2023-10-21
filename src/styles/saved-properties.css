@@ -1,4 +1,16 @@
 .saved-properties {
+  position: relative;
+}
+
+.saved-properties-heading {
+  text-align: center;
+}
+
+.saved-properties-cards {
+  display: flex;
   width: 80%;
-  margin: auto;
+  flex-wrap: wrap;
+  gap: 25px;
+  position: relative;
+  left: 200px;
 }

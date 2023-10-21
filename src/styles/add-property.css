@@ -1,6 +1,7 @@
 .add-property {
   margin: 0px auto;
-  padding: 20px;
+  position: relative;
+  top: 75px;
 }
 
 .add-property-form {
@@ -12,7 +13,6 @@
   background-color: white;
   padding: 20px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  border-radius: 25px;
 }
 
 .input-field {
